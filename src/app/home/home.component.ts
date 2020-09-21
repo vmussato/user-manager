@@ -3,6 +3,8 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 
+import { UserListComponent } from '../user/user-list/user-list.component';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -17,5 +19,4 @@ export class HomeComponent {
     );
 
   constructor(private breakpointObserver: BreakpointObserver) {}
-
 }
