@@ -11,7 +11,7 @@ export class UserListFavoriteComponent implements OnInit {
 
   constructor(private userService: UserService, private router: Router) { }
 
-  users: any;
+  users;
   favorites;
 
   ngOnInit(): void {

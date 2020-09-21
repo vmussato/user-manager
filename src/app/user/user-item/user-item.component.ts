@@ -9,5 +9,5 @@ export class UserItemComponent {
 
   constructor() { }
 
-  @Input() data: any;
+  @Input() data;
 }

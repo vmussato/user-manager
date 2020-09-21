@@ -12,7 +12,7 @@ import 'leaflet/dist/images/marker-icon-2x.png';
 export class UserMapComponent implements OnInit {
 
   private map;
-  @Input() data: any;
+  @Input() data;
 
   constructor() { }
 
