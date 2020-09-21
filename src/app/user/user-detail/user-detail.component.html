@@ -1,1 +1,25 @@
-<p>{{data.name}}</p>
+
+
+<mat-card>
+  <span class="material-icons">
+    star_outline
+  </span>
+  <span class="material-icons">
+    star
+  </span>
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{data.name}}</mat-card-title>
+    <mat-card-subtitle>Telefone: {{data.phone}} </mat-card-subtitle>
+    <mat-card-subtitle>Site: {{data.website}}</mat-card-subtitle>
+    <mat-card-subtitle>Empresa: {{data.company.name}}</mat-card-subtitle>
+
+  </mat-card-header>
+  <mat-card-content>
+
+  </mat-card-content>
+</mat-card>
+<div>
+  <app-user-map [data]="data.address.geo"></app-user-map>
+</div>
+

@@ -16,6 +16,7 @@ import { UserListComponent } from './user/user-list/user-list.component';
 import { UserItemComponent } from './user/user-item/user-item.component';
 import { UserDetailComponent } from './user/user-detail/user-detail.component';
 import { MatCardModule } from '@angular/material/card';
+import { UserMapComponent } from './user/user-map/user-map.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { MatCardModule } from '@angular/material/card';
     UserListComponent,
     UserItemComponent,
     UserDetailComponent,
+    UserMapComponent,
   ],
   imports: [
     BrowserModule,
