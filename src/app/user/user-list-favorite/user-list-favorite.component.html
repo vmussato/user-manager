@@ -2,3 +2,10 @@
   <app-user-item *ngFor="let user of users" [hidden]="!isFavorite(user)"  [data]="user" (click)="navigate(user)"></app-user-item>
 </div>
 <p *ngIf="!users">Loading</p>
+
+<mat-card *ngIf="!favorites.length">
+  <div>
+    <h2 >Bem vindo a página de favoritos</h2>
+    <h4>Parece que você não favoritou nenhum usuário ainda, utilize a estrela na tela do usuário para favoritar</h4>  
+  </div>
+</mat-card>

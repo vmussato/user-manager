@@ -26,8 +26,6 @@ export class UserDetailComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.data);
-
     const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
     favorites.forEach(element => {

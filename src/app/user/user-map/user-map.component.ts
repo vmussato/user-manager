@@ -18,7 +18,6 @@ export class UserMapComponent implements OnInit {
 
   ngOnInit(): void {
     this.initMap();
-    console.log(this.data, 'data')
   }
 
   private initMap(): void {

@@ -21,6 +21,14 @@
       </button>
       <span>Gerenciador de usuários</span>
     </mat-toolbar>
+
+    <mat-card *ngIf="this.router.url === '/'">
+      <div>
+        <h2 >bem vindo ao gerenciador de usuários</h2>
+        <h4>Utilize o menu lateral para navegar entre as opções</h4>  
+      </div>
+    </mat-card>
+    
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
