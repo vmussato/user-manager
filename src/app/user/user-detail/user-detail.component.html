@@ -1,12 +1,15 @@
 
 
 <mat-card>
-  <span class="material-icons">
-    star_outline
-  </span>
-  <span class="material-icons">
-    star
-  </span>
+  <div>
+    <span class="material-icons" (click)="addFavorite()" *ngIf="favorite === false">
+      star_outline
+    </span>
+    <span class="material-icons" (click)="removeFavorite()" *ngIf="favorite">
+      star
+    </span>
+  </div>
+  
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
     <mat-card-title>{{data.name}}</mat-card-title>

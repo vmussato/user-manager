@@ -17,6 +17,7 @@ import { UserItemComponent } from './user/user-item/user-item.component';
 import { UserDetailComponent } from './user/user-detail/user-detail.component';
 import { MatCardModule } from '@angular/material/card';
 import { UserMapComponent } from './user/user-map/user-map.component';
+import { UserListFavoriteComponent } from './user/user-list-favorite/user-list-favorite.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { UserMapComponent } from './user/user-map/user-map.component';
     UserItemComponent,
     UserDetailComponent,
     UserMapComponent,
+    UserListFavoriteComponent,
   ],
   imports: [
     BrowserModule,

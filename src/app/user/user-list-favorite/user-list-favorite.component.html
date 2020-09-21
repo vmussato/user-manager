@@ -1,0 +1,4 @@
+<div >
+  <app-user-item *ngFor="let user of users" [hidden]="!isFavorite(user)"  [data]="user" (click)="navigate(user)"></app-user-item>
+</div>
+<p *ngIf="!users">Loading</p>
