@@ -5,13 +5,9 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './user-item.component.html',
   styleUrls: ['./user-item.component.scss']
 })
-export class UserItemComponent implements OnInit {
+export class UserItemComponent {
 
   constructor() { }
 
   @Input() data: any;
-
-  ngOnInit(): void {
-    console.log(this.data);
-  }
 }

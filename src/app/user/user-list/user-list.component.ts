@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationExtras, Router } from '@angular/router';
 
 import { UserService } from '../../services/user.service';
 
@@ -22,12 +22,17 @@ export class UserListComponent implements OnInit {
   getItems() {
     this.userService.getUsers().subscribe( response => {
       this.users = response ;
-      console.log(this.users)
     });
   }
 
-  navigate(user) { 
-    this.router.navigate(['/user:id', { id: user.id }]);
+  navigate(user) {
+    const navigationExtras: NavigationExtras = {
+      state: {
+        data: user
+      }
+    };
+
+    this.router.navigate([`/user/${user.id}`], navigationExtras);
   }
 
 }
